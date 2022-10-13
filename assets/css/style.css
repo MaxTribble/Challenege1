@@ -3,27 +3,31 @@
     padding: 0;
     margin: 0;
 }
-
+/* setting the backround color for the entire page*/
 body {
     background-color: #d9dcd6;
 }
-
+/* the heading for the very top of the page seperated from h1 tags to change color on h1 elements*/
 .header {
-    padding: 20px;
+    padding: 20px; /* setting extra space around header using the first layer of the box model, padding*/
+    /* font family changes the font for the heading, multiple fonts are cascading so at least one non default font is shown*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color: #2a607c; /* backround color for the header*/
+    color: #ffffff; /* desired color for the header font*/
 }
 
+/* the large title portion at the top of the page*/
 .header h1 {
-    display: inline-block;
-    font-size: 48px;
+    display: inline-block; /*inline-block allows the list items to display next to the main header*/
+    font-size: 48px; /*the font size for the main heading at the top*/
 }
 
+/* this is a sub class for h1, selecting specific letters to change within the header*/
 .header h1 .seo {
-    color: #d9dcd6;
+    color: #d9dcd6; /*changes the font color of the specified class*/
 }
 
+/*targeting the divs within the header section*/
 .header div {
     padding-top: 15px;
     margin-right: 20px;
