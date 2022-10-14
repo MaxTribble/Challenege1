@@ -29,67 +29,72 @@ body {
 
 /*targeting the divs within the header section*/
 .header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    padding-top: 15px; /* space between this item and the iteam above*/
+    margin-right: 20px; /* space between this item and anything to the right*/
+    float: right; /* float to the right of the container*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* family of fonts cascading*/
+    font-size: 20px; /*size of the font in pixels*/
 }
 
+/* targeting the list, inside the div, inside the header*/
 .header div ul {
-    list-style-type: none;
+    list-style-type: none; /* this takes away the bullet points for the list*/
 }
-
+/* targeting the list items, inside the list, inside the div, inside the header*/
 .header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+    display: inline-block; /* this is changing the default of a list from block to display in a line */
+    margin-left: 25px; /* sets spacing to the left of the list items */
 }
-
+/* targeting anything with an <a tag */
 a {
-    color: #ffffff;
-    text-decoration: none;
+    color: #ffffff; /* changing the color of the text */
+    text-decoration: none; /* takes the link decoration away, links are inside this tag */
 }
-
+/* targeting everything with the <p tag*/
 p {
-    font-size: 16px;
+    font-size: 16px; /* setting the font size for the paragraphs */
 }
-
+/* creating a class to tag elements in html */
+/* --- this section is dedicated to adding a backround image to the specified spot */
 .hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+    height: 800px; /* height of the image */
+    width: 100%; /* telling the image to take up the whole width of the page */
+    margin-bottom: 25px; /* space between the bottom of the image and the next element */
+    background-image: url("../images/digital-marketing-meeting.jpg"); /* the picture link to the background image */
+    background-size: cover; /* telling the image to cover the whole background of it's area*/
+    background-position: center; /* telling the image to center to the page */
 }
 
+/* setting up a class that is targeting images for specified positions */
 .float-left {
-    float: left;
-    margin-right: 25px;
+    float: left; /* telling the image to float to the left of container */
+    margin-right: 25px; /*spacing the float ever further from the origin it's floating away from */
 }
 
+/* setting up a class that is targeting images for specified positions */
 .float-right {
-    float: right;
-    margin-left: 25px;
+    float: right; /* telling the image to float to the right of container */
+    margin-left: 25px; /*spacing the float ever further from the origin it's floating away from */
 }
-
+/* setting up a class to target elements in html */
 .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+    width: 75%; /* take up 75% of the width in this element's allowed area */
+    display: inline-block; /* this is a block element displaying inline with the element next to it */
+    margin-left: 20px; /* spacing this element from the element to the left */
 }
-
+/* creating a class to target elements of html */
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
+    margin-right: 20px; /* spacing to the right of this class */
+    padding: 20px; /* creating a standard spacing all around the element */
+    clear: both; /* clears the sides of floating elements so no text is next to them and is pushed below */
+    float: right; /* the direction to float from the container */
+    width: 20%; /* take up 20% of the allowed width */
+    height: 100%; /* take up 100% of the allowed height in the set area */
+    /* setting the allowed fonts, cascading until one appears */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: #2589bd; /* the background color of the area */
 }
-
+ /*reduntant classes because they all have the same perameters 
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -103,7 +108,7 @@ p {
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
-}
+} 
 
 .benefit-lead h3 {
     margin-bottom: 10px;
@@ -136,8 +141,28 @@ p {
     display: block;
     margin: 10px auto;
     max-width: 150px;
+}*/
+
+/* setting a class */
+.benefit-all {
+    margin-bottom: 32px; /* setting the spacing for the bottom of the class */
+    color: #ffffff; /* setting text color of the class */
 }
 
+/* targeting the h3 of the benefit-all class */
+.benefit-all h3 {
+    margin-bottom: 10px; /* spacing for the bottom of the class */
+    text-align: center; /* aligning the text to the center of it's area */
+}
+
+/* targeting the <img tag for the benefit-all class */
+.benefit-all img {
+    display: block; /* displaying the images verticle, the default is horizontal */
+    margin: 10px auto; /* 10px represents the top and bottom margins and auto, auto centers the left and right sides */
+    max-width: 150px; /* width of the image in pixels */
+}
+
+/* redundant classes for the same attributes
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -191,14 +216,37 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
+*/
 
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+/* creating a class */
+.topic {
+    margin-bottom: 20px; /* space above this class and other elements */
+    padding: 50px; /* setting space around everything in this class */
+    height: 300px; /* height of this class */
+    /* font family settign cascading fonts until one is allowed */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb; /* background color of this class */
+    color: #ffffff; /* setting text color for this class */
 }
 
+/* selecting the <img tag within the topic class */
+.topic img {
+    max-height: 200px; /* max height of items in the image tag, inside this class*/
+}
+/* targeting all <h2 tags inside topic class */
+.topic h2 {
+    margin-bottom: 20px; /* space above <h2 tags */
+    font-size: 36px; /* selecting the font size */
+}
+/* creating a class */
+.footer {
+    padding: 30px; /* empty area around this class and other elements */
+    clear: both; /* clearing space to the left and right of this class and storing anything there below */
+    /* selecting font cascading styles until one sets */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center; /* aligning this class with the center of it's area */
+}
+/* targeting ant <h2 tags within the footer class */
 .footer h2 {
-    font-size: 20px;
+    font-size: 20px; /* font size */
 }
